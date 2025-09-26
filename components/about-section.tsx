@@ -44,16 +44,14 @@ export function AboutSection() {
                   🔄 In late 2024, I transitioned to analytics to unite my love for tech with numbers, logic, and decision-making.
                 </p>
                 <p>
-                  ✅ <strong>Proficient in:</strong> Microsoft Excel (dashboards, pivots), MySQL (Joins, Aggregates),
-                  GCP BigQuery, Python (+NumPy, Pandas, Matplotlib), Power BI, Tableau.
+                  ✅ <strong>Proficient in:</strong> Microsoft Excel (dashboards, pivots, advanced functions, power query), MySQL (Joins, Aggregates, window funtions),
+                  GCP BigQuery, Python (NumPy, Pandas, Matplotlib, Seaborn etc), Power BI (DAX, KPIs), Tableau (Dashboards, Storyboards), Data Cleaning, Data Visualisation, Data Modelling and more.
                 </p>
                 <p>
-                  📌 <strong>Currently learning:</strong> Machine Learning (theory, basics), sharpening analytical
-                  thinking.
+                  📌 <strong>Currently learning:</strong> Statistics and Probability (theory, basics), sharpening analytical thinking.
                 </p>
                 <p>
-                  💼 Completed 10+ hands-on projects (Excel, MySQL, Python, PowerBI, Tableau) — all on GitHub and open
-                  to data analytics opportunities.
+                  💼 Completed 10+ hands-on projects (Excel, MySQL, Python, PowerBI, Tableau) — all on GitHub and I'm open to data analytics opportunities.
                 </p>
                 <p>📬 Connect for hiring, mentoring, or collaboration!</p>
               </div>
