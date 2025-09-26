@@ -1,4 +1,5 @@
 "use client";
+
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { ExternalLink, Github } from "lucide-react";
@@ -9,7 +10,7 @@ import { CardContainer, CardBody, CardItem } from "@/components/ui/3d-card";
 
 export function EnhancedProjects() {
   return (
-    <section id="projects" className="py-10 bg-muted/30">
+    <section id="projects" className="py-5 bg-muted/30">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-2">
           <h2 className="text-3xl sm:text-4xl font-bold mb-4 text-balance">
@@ -20,8 +21,7 @@ export function EnhancedProjects() {
           </p>
         </div>
 
-        {/* Responsive 3/2/1-column grid */}
-        <div className="grid gap-8 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 max-w-7xl mx-auto w-full">
+        <div className="grid gap-4 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 max-w-7xl mx-auto w-full">
           {projects.map((project, index) => (
             <motion.div
               key={project.title}
@@ -32,7 +32,10 @@ export function EnhancedProjects() {
               className="flex w-full"
             >
               <CardContainer className="inter-var w-full">
-                <CardBody className="bg-gray-50 relative group/card dark:hover:shadow-lg dark:hover:shadow-emerald-500/[0.10] dark:bg-neutral-900 dark:border-white/[0.07] border-black/[0.07] w-full rounded-2xl p-5 border flex flex-col justify-between">
+                <CardBody
+                  className="bg-gray-50 relative group/card dark:hover:shadow-lg dark:hover:shadow-emerald-500/[0.10] dark:bg-neutral-900 dark:border-white/[0.07]
+                  border-black/[0.07] w-full rounded-2xl p-5 border flex flex-col justify-between min-h-[500px]" // fixed card height
+                >
                   <div>
                     <CardItem
                       translateZ="50"
@@ -40,17 +43,21 @@ export function EnhancedProjects() {
                     >
                       {project.title}
                     </CardItem>
-
                     <CardItem
                       as="p"
                       translateZ="60"
                       className="text-neutral-500 text-sm mt-2 dark:text-neutral-300"
+                      style={{ minHeight: "60px" }} // fixed description height for consistency
                     >
                       {project.description}
                     </CardItem>
                   </div>
 
-                  <CardItem translateZ="100" className="w-full mt-4">
+                  <CardItem
+                    translateZ="100"
+                    className="w-full mt-2"
+                    style={{ minHeight: "180px", position: "relative" }} // fixed image container height
+                  >
                     <div className="relative rounded-lg aspect-[16/9] h-44 overflow-hidden">
                       <Image
                         src={project.image || "/placeholder.svg"}
@@ -62,27 +69,40 @@ export function EnhancedProjects() {
                       <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent" />
                     </div>
                   </CardItem>
-
-                  <CardItem translateZ="60" className="mt-4 flex flex-wrap gap-2">
-                    {project.technologies.map((tech, techIndex) => (
-                      <Badge key={tech} variant="secondary" className="text-xs">
-                        {project.techIcons[techIndex]} {tech}
+                  <CardItem
+                    translateZ="60"
+                    className="mt-2 flex flex-row flex-wrap justify-center items-center gap-2 px-1 py-2"
+                    style={{ minHeight: "48px" }}
+                  >
+                    {project.technologies.map((tech) => (
+                      <Badge
+                        key={tech}
+                        variant="secondary"
+                        className="text-xs px-1 py-1 whitespace-nowrap"
+                      >
+                        {tech}
                       </Badge>
                     ))}
                   </CardItem>
 
-                  <div className="flex justify-between items-center mt-6">
-                    <CardItem
-                      translateZ={20}
-                      as={Button}
-                      className="px-4 py-2 rounded-xl text-xs font-normal bg-black text-white dark:bg-white dark:text-black border border-neutral-700 dark:border-neutral-400 hover:opacity-90 transition-all"
-                      asChild
-                    >
-                      <a href={project.liveLink} target="_blank" rel="noopener noreferrer">
-                        <ExternalLink className="mr-2 h-3 w-3" />
-                        Live Demo
-                      </a>
-                    </CardItem>
+
+                  <div
+                    className="flex flex-wrap justify-start gap-3 items-center mt-6"
+                    style={{ minHeight: "48px" }} // fixed buttons container height
+                  >
+                    {project.liveLink && project.liveLink.trim() !== "" && (
+                      <CardItem
+                        translateZ={20}
+                        as={Button}
+                        className="px-4 py-2 rounded-xl text-xs font-normal bg-black text-white dark:bg-white dark:text-black border border-neutral-700 dark:border-neutral-400 hover:opacity-90 transition-all"
+                        asChild
+                      >
+                        <a href={project.liveLink} target="_blank" rel="noopener noreferrer">
+                          <ExternalLink className="mr-2 h-3 w-3" />
+                          Live Demo
+                        </a>
+                      </CardItem>
+                    )}
                     <CardItem
                       translateZ={20}
                       as={Button}
