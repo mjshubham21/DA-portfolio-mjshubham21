@@ -1,3 +1,4 @@
+"use client"
 import { Navigation } from "@/components/navigation"
 import { Timeline } from "@/components/timeline"
 import { ScrollToTop } from "@/components/scroll-to-top"
