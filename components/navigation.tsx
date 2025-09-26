@@ -6,12 +6,14 @@ import { usePathname } from "next/navigation"
 import { Button } from "@/components/ui/button"
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
 import { Badge } from "@/components/ui/badge"
-import { Menu, User, FolderOpen, Mail, MapPin } from "lucide-react"
+import { Menu, User, FolderOpen, Mail, MapPin, PencilRuler } from "lucide-react"
 import { ThemeToggle } from "@/components/theme-toggle"
+import { DownloadResumeButton } from "./resume-btn"
 
 const navItems = [
   { name: "About Me", link: "/#about", icon: <User className="h-4 w-4" /> },
   { name: "Projects", link: "/#projects", icon: <FolderOpen className="h-4 w-4" /> },
+  { name: "Skills", link: "/#skills", icon: <PencilRuler className="h-4 w-4" /> },
   { name: "Contact", link: "/#contact", icon: <Mail className="h-4 w-4" /> },
   { name: "My Journey", link: "/journey", icon: <MapPin className="h-4 w-4" /> },
 ]
@@ -84,6 +86,7 @@ export function Navigation() {
           </Link>
 
           <div className="hidden md:flex items-center space-x-1">
+            <DownloadResumeButton />
             {navItems.map((item) => {
               const Icon = item.icon
               const isActive =
@@ -176,6 +179,9 @@ export function Navigation() {
                       </Link>
                     )
                   })}
+                  <div className="flex items-center justify-center mt-8">
+                    <DownloadResumeButton />
+                  </div>
                 </div>
               </SheetContent>
             </Sheet>

@@ -59,7 +59,7 @@ export const projects: Project[] = [
       "Combined Power BI dashboards and Python analytics for movie industry metrics visualization and performance evaluation.",
     technologies: ["Power BI", "Python", "DAX"],
     techIcons: [powerBILogo, pythonLogo, "⚡"],
-    image: "/powerbi1.png",
+    image: "/powerbi1.jpeg",
     liveLink: "",
     gitLink: "https://github.com/mjshubham21/MoviesMetrics_PowerBi_Python_Project",
   },

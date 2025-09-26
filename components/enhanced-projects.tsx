@@ -21,7 +21,7 @@ export function EnhancedProjects() {
           </p>
         </div>
 
-        <div className="grid gap-4 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 max-w-7xl mx-auto w-full">
+        <div className="grid gap-10 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 max-w-7xl mx-auto w-full">
           {projects.map((project, index) => (
             <motion.div
               key={project.title}
@@ -58,7 +58,7 @@ export function EnhancedProjects() {
                     className="w-full mt-2"
                     style={{ minHeight: "180px", position: "relative" }} // fixed image container height
                   >
-                    <div className="relative rounded-lg aspect-[16/9] h-44 overflow-hidden">
+                    <div className="relative rounded-lg aspect-[16/9] h-44 overflow-hidden mx-auto">
                       <Image
                         src={project.image || "/placeholder.svg"}
                         alt={project.title}
@@ -84,7 +84,6 @@ export function EnhancedProjects() {
                       </Badge>
                     ))}
                   </CardItem>
-
 
                   <div
                     className="flex flex-wrap justify-start gap-3 items-center mt-6"

@@ -20,6 +20,7 @@ import pandasLogo from "../src/assets/pandas-logo.png"
 import numpyLogo from "../src/assets/numpy-logo.png"
 import matplotlibLogo from "../src/assets/matplotlib-logo.png"
 import Image from "next/image"
+import { DownloadResumeButton } from "./resume-btn"
 
 const techIcons = [
   { name: "Python", icon: pythonLogo, delay: 0, color: "text-yellow-400" },
@@ -129,7 +130,7 @@ export function HeroSection() {
   return (
     <section
       id="hero"
-      className="min-h-screen w-screen flex flex-col items-center justify-center relative overflow-hidden pt-10 sm:pt-16"
+      className="min-h-screen w-screen flex flex-col items-center justify-center relative overflow-hidden pt-10 sm:pt-8 px-6"
     >
       <div className="absolute inset-0 bg-gradient-to-br from-background via-blue-50/30 to-purple-50/20 dark:from-background dark:via-blue-950/20 dark:to-purple-950/10"></div>
       <motion.div
@@ -191,17 +192,7 @@ export function HeroSection() {
                 View My Work
                 <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-2 transition-transform duration-300" />
               </Button>
-              <Button
-                variant="outline"
-                size="sm"
-                className="w-40 sm:w-auto px-3 py-2 text-sm sm:text-lg"
-                asChild
-              >
-                <a href="/Resume.pdf" target="_blank" rel="noopener noreferrer">
-                  <Download className="mr-2 h-4 w-4 group-hover:scale-110 transition-transform duration-300" />
-                  Download Resume
-                </a>
-              </Button>
+              <DownloadResumeButton />
             </div>
           </motion.div>
 

@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
 import { Github, Linkedin, Mail, Heart, ArrowUp } from "lucide-react"
 import Link from "next/link"
+import { DownloadResumeButton } from "./resume-btn"
 
 export function Footer() {
   const scrollToTop = () => {
@@ -59,7 +60,6 @@ export function Footer() {
               <Badge variant="outline">React</Badge>
             </div>
           </div>
-
           {/* Contact */}
           <div className="space-y-4">
             <h3 className="font-semibold">Connect</h3>
@@ -81,6 +81,12 @@ export function Footer() {
               </Button>
             </div>
           </div>
+          {/* Download Resume Button */}
+          <div className="space-y-4">
+            <h3 className="font-semibold">Resume</h3>
+            <DownloadResumeButton />
+          </div>
+
         </div>
 
         <div className="border-t mt-8 pt-8 flex flex-col sm:flex-row justify-between items-center">
