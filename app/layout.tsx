@@ -2,6 +2,7 @@ import type React from "react";
 import { Inter } from "next/font/google";
 import { JetBrains_Mono } from "next/font/google";
 import { Analytics } from "@vercel/analytics/next";
+import { SpeedInsights } from '@vercel/speed-insights/next';
 import dynamic from "next/dynamic";
 import { Suspense } from "react";
 import { ThemeProvider } from "@/components/theme-provider";
@@ -48,6 +49,7 @@ export default function RootLayout({
             <Suspense fallback={<div className="h-screen flex items-center justify-center">Loading...</div>}>
               {children}
               <Analytics />
+              <SpeedInsights />
             </Suspense>
           </ErrorBoundary>
           {/* <Analytics /> */}
