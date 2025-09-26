@@ -47,9 +47,10 @@ export default function RootLayout({
           <ErrorBoundary fallback={<Loader />}>
             <Suspense fallback={<div className="h-screen flex items-center justify-center">Loading...</div>}>
               {children}
+              <Analytics />
             </Suspense>
           </ErrorBoundary>
-          <Analytics />
+          {/* <Analytics /> */}
         </ThemeProvider>
       </body>
     </html>
