@@ -168,13 +168,13 @@ export interface Education {
 export const educations: Education[] = [
   {
     degree: "Master of Science in Computer Science",
-    institution: "SPPU",
+    institution: "KJS College of Arts, Commerce and Science Kopargaon, 423601, Ahmednagar, SPPU Affiliated",
     years: "2022-2024",
-    percentage: "80%",
+    percentage: "81%",
   },
   {
     degree: "Bachelor of Science in Computer Science",
-    institution: "University of Mumbai",
+    institution: "KJS College of Arts, Commerce and Science Kopargaon, 423601, Ahmednagar, SPPU Affiliated",
     years: "2018-2021",
     percentage: "74%",
   },
