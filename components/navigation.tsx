@@ -85,7 +85,7 @@ export function Navigation() {
             </span>
           </Link>
 
-          <div className="hidden md:flex items-center space-x-1">
+          <div className="hidden lg:flex items-center space-x-1">
             <DownloadResumeButton />
             {navItems.map((item) => {
               const Icon = item.icon
@@ -122,7 +122,7 @@ export function Navigation() {
             <ThemeToggle />
           </div>
 
-          <div className="flex items-center space-x-2 md:hidden">
+          <div className="flex items-center space-x-2 lg:hidden">
             <ThemeToggle />
             <Sheet open={isOpen} onOpenChange={setIsOpen}>
               <SheetTrigger asChild>

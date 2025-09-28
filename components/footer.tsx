@@ -33,13 +33,13 @@ export function Footer() {
           <div className="space-y-4">
             <h3 className="font-semibold">Quick Links</h3>
             <div className="space-y-2">
-              <Link href="#about" className="block text-muted-foreground hover:text-primary transition-colors">
+              <Link href="/#about" className="block text-muted-foreground hover:text-primary transition-colors">
                 About Me
               </Link>
-              <Link href="#skills" className="block text-muted-foreground hover:text-primary transition-colors">
+              <Link href="/#skills" className="block text-muted-foreground hover:text-primary transition-colors">
                 Skills
               </Link>
-              <Link href="#projects" className="block text-muted-foreground hover:text-primary transition-colors">
+              <Link href="/#projects" className="block text-muted-foreground hover:text-primary transition-colors">
                 Projects
               </Link>
               <Link href="/journey" className="block text-muted-foreground hover:text-primary transition-colors">

@@ -176,7 +176,7 @@ export const educations: Education[] = [
     degree: "Bachelor of Science in Computer Science",
     institution: "KJS College of Arts, Commerce and Science Kopargaon, 423601, Ahmednagar, SPPU Affiliated",
     years: "2018-2021",
-    percentage: "74%",
+    percentage: "64%",
   },
 ]
 
@@ -211,17 +211,6 @@ export const experiences: Experience[] = [
       "Participated in code reviews and maintained high code quality standards",
     ],
   },
-  // {
-  //   company: "Freelance",
-  //   position: "Web Developer",
-  //   duration: "January 2024 - June 2024",
-  //   responsibilities: [
-  //     "Built custom websites and web applications for small businesses",
-  //     "Worked with modern JavaScript frameworks and libraries",
-  //     "Provided technical consultation and project management",
-  //     "Delivered projects on time while maintaining client satisfaction",
-  //   ],
-  // },
 ]
 
 // Certificates

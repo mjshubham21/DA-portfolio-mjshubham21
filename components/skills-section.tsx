@@ -55,7 +55,7 @@ export function SkillsSection() {
           </p>
         </div>
 
-        <BentoGrid className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
+        <BentoGrid className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
           {skills.map((skill, index) => {
             // Determine if current grid item is double width
             const isDoubleWidth = index === 0 || index === 3;
@@ -92,9 +92,7 @@ export function SkillsSection() {
                   </div>
                 }
                 
-
-                className={`group hover:shadow-xl hover:border-primary/50 transition-all duration-300 ${isDoubleWidth ? "lg:col-span-2" : ""
-                  }`}
+                className={`group hover:shadow-xl hover:border-primary/50 transition-all duration-300 ${isDoubleWidth ? "md:col-span-2" : ""}`}
               />
             );
           })}
