@@ -69,7 +69,7 @@ export const projects: Project[] = [
       "Advanced sales and operations analytics Power BI project for the AdventureWorks database with interactive reports.",
     technologies: ["Power BI", "DAX"],
     techIcons: [powerBILogo, "⚡"],
-    image: "/powerbi2.png",
+    image: "/powerbi2.jpeg",
     liveLink: "",
     gitLink: "https://github.com/mjshubham21/AdventureWorks_PowerBi_Project",
   },

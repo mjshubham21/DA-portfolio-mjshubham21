@@ -3,13 +3,8 @@
 import { useEffect, useState } from "react"
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
-import {
-  ArrowRight,
-  Download,
-  Sparkles,
-} from "lucide-react"
+import { ArrowRight, Sparkles} from "lucide-react"
 import { motion } from "framer-motion"
-
 // Import logos from src/assets
 import pythonLogo from "../src/assets/python-logo.png"
 import excelLogo from "../src/assets/excel-logo2.png"
@@ -23,67 +18,31 @@ import Image from "next/image"
 import { DownloadResumeButton } from "./resume-btn"
 
 const techIcons = [
-  { name: "Python", icon: pythonLogo, delay: 0, color: "text-yellow-400" },
-  { name: "Excel", icon: excelLogo, delay: 0.1, color: "text-green-400" },
-  { name: "MySQL", icon: mysqlLogo, delay: 0.2, color: "text-blue-400" },
-  { name: "Power BI", icon: powerBILogo, delay: 0.3, color: "text-orange-400" },
-  { name: "Tableau", icon: tableauLogo, delay: 0.4, color: "text-purple-400" },
-  { name: "Pandas", icon: pandasLogo, delay: 0.5, color: "text-pink-400" },
-  { name: "NumPy", icon: numpyLogo, delay: 0.6, color: "text-cyan-400" },
-  { name: "Matplotlib", icon: matplotlibLogo, delay: 1.4, color: "text-red-400" },
+  { name: "Python", icon: pythonLogo, delay: 0.075, color: "text-yellow-400" },
+  { name: "Excel", icon: excelLogo, delay: 0.075, color: "text-green-400" },
+  { name: "MySQL", icon: mysqlLogo, delay: 0.075, color: "text-blue-400" },
+  { name: "Power BI", icon: powerBILogo, delay: 0.075, color: "text-orange-400" },
+  { name: "Tableau", icon: tableauLogo, delay: 0.075, color: "text-purple-400" },
+  { name: "Pandas", icon: pandasLogo, delay: 0.075, color: "text-pink-400" },
+  { name: "NumPy", icon: numpyLogo, delay: 0.075, color: "text-cyan-400" },
+  { name: "Matplotlib", icon: matplotlibLogo, delay: 0.075, color: "text-red-400" },
 ]
 
-// const IconCard = ({ tech }: { tech: any }) => (
-//   <motion.div
-//     className="relative group cursor-pointer"
-//     initial={{ opacity: 0, scale: 0 }}
-//     animate={{ opacity: 1, scale: 1 }}
-//     transition={{
-//       delay: tech.delay,
-//       duration: 0.2,
-//       ease: "easeOut",
-//     }}
-//     whileHover={{ scale: 1.25 }}
-//     title={tech.name}
-//   >
-//     {/* <img
-//       src={tech.icon}
-//       alt={tech.name}
-//       className="w-10 h-10 sm:w-16 sm:h-16 object-contain relative z-10 filter hover:drop-shadow-lg transition-all duration-300"
-//     /> */}
-//     <Image
-//       src={tech.icon}
-//       alt={tech.name}
-//       width={100}
-//       height={100}
-//       className="w-10 h-10 sm:w-16 sm:h-16 object-contain relative z-10 filter hover:drop-shadow-lg transition-all duration-300"
-//     />
-//     <div className="absolute inset-0 bg-blue-500/20 rounded-lg blur-md opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-//     <div className="absolute -bottom-8 left-1/2 transform -translate-x-1/2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-//       <Badge
-//         variant="secondary"
-//         className="text-xs whitespace-nowrap bg-white/90 dark:bg-gray-800/90 backdrop-blur-sm"
-//       >
-//         {tech.name}
-//       </Badge>
-//     </div>
-//   </motion.div>
-// )
 const IconCard = ({ tech }: { tech: any }) => (
   <motion.div
-    className="relative group cursor-pointer"
+    className="relative group cursor-pointer lg:mb-8 w-16 h-16 sm:w-24 sm:h-24 flex items-center justify-center"
     initial={{ opacity: 0, scale: 0 }}
     animate={{ opacity: 1, scale: 1 }}
     transition={{
       delay: tech.delay,
-      duration: 0.2,
+      duration: 0.15,
       ease: "easeOut",
     }}
     whileHover={{ scale: 1.25 }}
     title={tech.name}
   >
     {/* Round background */}
-    <div className="w-16 h-16 sm:w-24 sm:h-24 rounded-full flex items-center justify-center bg-white/80 dark:bg-white-100/50 shadow-lg ring-2 ring-blue-400 ring-inset transition-all duration-300">
+    <div className="w-16 h-16 sm:w-24 sm:h-24 rounded-full flex items-center justify-center bg-white/80 dark:bg-white-100/50 shadow-lg ring-2 ring-blue-400 ring-inset transition-all duration-200">
       <Image
         src={tech.icon}
         alt={tech.name}
@@ -92,8 +51,8 @@ const IconCard = ({ tech }: { tech: any }) => (
         className="w-10 h-10 sm:w-16 sm:h-16 object-contain"
       />
     </div>
-    <div className="absolute inset-0 bg-blue-500/20 rounded-lg blur-md opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-    <div className="absolute -bottom-8 left-1/2 transform -translate-x-1/2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+    <div className="absolute inset-0 bg-blue-500/20 rounded-lg blur-md opacity-0 group-hover:opacity-100 transition-opacity duration-200"></div>
+    <div className="absolute mt-2 pt-2 left-1/2 bottom-0 -translate-x-1/2 translate-y-full flex justify-center items-center opacity-0 group-hover:opacity-100 transition-opacity duration-200">
       <Badge
         variant="secondary"
         className="text-xs whitespace-nowrap bg-white/90 dark:bg-gray-800/90 backdrop-blur-sm"
@@ -204,7 +163,7 @@ export function HeroSection() {
           >
             <div className="relative w-full h-52 sm:h-72 md:h-80 lg:h-96 flex flex-col items-center justify-center">
               <div className="absolute inset-0 bg-gradient-to-r from-blue-500/20 via-purple-500/20 to-cyan-500/20 rounded-full blur-3xl"></div>
-              <div className="absolute inset-4 bg-gradient-to-l from-blue-400/10 via-transparent to-purple-400/10 rounded-full blur-2xl"></div>
+              <div className="absolute inset-4 bg-gradient-to-l from-blue-400/10 via-transparent to-purple-400/10 rounded-full blur-3xl"></div>
               <div className="absolute inset-0 opacity-10">
                 <svg className="w-full h-full" viewBox="0 0 400 400">
                   <defs>
@@ -268,7 +227,7 @@ export function HeroSection() {
               </div>
 
               {/* Large screens grid */}
-              <div className="relative w-full hidden lg:grid lg:grid-cols-4 lg:grid-rows-2 lg:gap-6 lg:p-8">
+              <div className="relative w-full hidden lg:grid lg:grid-cols-4 lg:grid-rows-2 lg:gap-8 lg:p-4 lg:mb-4">
                 {techIcons.map((tech) => (
                   <IconCard key={tech.name} tech={tech} />
                 ))}

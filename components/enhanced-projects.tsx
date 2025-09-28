@@ -31,7 +31,7 @@ export function EnhancedProjects() {
               viewport={{ once: true }}
               className="flex w-full"
             >
-              <CardContainer className="inter-var w-full">
+              <CardContainer className="inter-var w-full h-[400px]">
                 <CardBody
                   className="bg-gray-50 relative group/card dark:hover:shadow-lg dark:hover:shadow-emerald-500/[0.10] dark:bg-neutral-900 dark:border-white/[0.07]
                   border-black/[0.07] w-full rounded-2xl p-5 border flex flex-col justify-between min-h-[500px]" // fixed card height
