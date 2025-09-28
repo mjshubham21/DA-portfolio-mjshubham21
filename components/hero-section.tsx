@@ -31,14 +31,14 @@ const techIcons = [
 const IconCard = ({ tech }: { tech: any }) => (
   <motion.div
     className="relative group cursor-pointer lg:mb-8 w-16 h-16 sm:w-24 sm:h-24 flex items-center justify-center"
-    initial={{ opacity: 0, scale: 0 }}
-    animate={{ opacity: 1, scale: 1 }}
-    transition={{
-      delay: tech.delay,
-      duration: 0.15,
-      ease: "easeOut",
-    }}
-    whileHover={{ scale: 1.25 }}
+    initial={{ opacity: 1, scale: 1 }}
+    // animate={{ opacity: 1, scale: 1 }}
+    // transition={{
+    //   delay: tech.delay,
+    //   duration: 0.1,
+    //   ease: "easeOut",
+    // }}
+    // whileHover={{ scale: 1.25 }}
     title={tech.name}
   >
     {/* Round background */}
@@ -51,15 +51,15 @@ const IconCard = ({ tech }: { tech: any }) => (
         className="w-10 h-10 sm:w-16 sm:h-16 object-contain"
       />
     </div>
-    <div className="absolute inset-0 bg-blue-500/20 rounded-lg blur-md opacity-0 group-hover:opacity-100 transition-opacity duration-200"></div>
-    <div className="absolute mt-2 pt-2 left-1/2 bottom-0 -translate-x-1/2 translate-y-full flex justify-center items-center opacity-0 group-hover:opacity-100 transition-opacity duration-200">
+    {/* <div className="absolute inset-0 bg-blue-500/20 rounded-lg blur-md opacity-0 group-hover:opacity-100 transition-opacity duration-200"></div> */}
+    {/* <div className="absolute mt-2 pt-2 left-1/2 bottom-0 -translate-x-1/2 translate-y-full flex justify-center items-center opacity-0 group-hover:opacity-100 transition-opacity duration-200">
       <Badge
         variant="secondary"
         className="text-xs whitespace-nowrap bg-white/90 dark:bg-gray-800/90 backdrop-blur-sm"
       >
         {tech.name}
       </Badge>
-    </div>
+    </div> */}
   </motion.div>
 )
 
