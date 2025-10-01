@@ -43,7 +43,7 @@ export default function RootLayout({
       <head>
         <link rel="icon" href="/s.png" />
       </head>
-      <body className={`font-sans ${inter.variable} ${jetbrainsMono.variable} antialiased`}>
+      <body className={`font-sans ${inter.variable} ${jetbrainsMono.variable} `}>
         <ThemeProvider attribute="class" defaultTheme="dark" enableSystem disableTransitionOnChange>
           <ErrorBoundary fallback={<Loader />}>
             <Suspense fallback={<div className="h-screen flex items-center justify-center">Loading...</div>}>

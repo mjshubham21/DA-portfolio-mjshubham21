@@ -42,7 +42,7 @@ const IconCard = ({ tech }: { tech: any }) => (
     title={tech.name}
   >
     {/* Round background */}
-    <div className="w-16 h-16 sm:w-24 sm:h-24 rounded-full flex items-center justify-center bg-white/80 dark:bg-white-100/50 shadow-lg ring-2 ring-blue-400 ring-inset transition-all duration-200">
+    <div className="w-16 h-16 sm:w-24 sm:h-24 rounded-full flex items-center justify-center bg-white/80 dark:bg-white-100/50 shadow-lg ring-2 ring-blue-500 ring-inset ">
       <Image
         src={tech.icon}
         alt={tech.name}
@@ -114,18 +114,18 @@ export function HeroSection() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 lg:gap-16 items-center">
           <motion.div
             className="space-y-8"
-            initial={{ opacity: 0, x: -50 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.8, ease: "easeOut" }}
+            // initial={{ opacity: 0, x: -50 }}
+            // animate={{ opacity: 1, x: 0 }}
+            // transition={{ duration: 0.3, ease: "easeOut" }}
           >
             <div className="space-y-6">
-              <h1 className="text-3xl sm:text-5xl lg:text-7xl font-bold text-balance leading-tight">
+              <h1 className="text-3xl sm:text-5xl lg:text-7xl font-bold text-balance ">
                 Hi, I'm{" "}
                 <span className="bg-gradient-to-r from-blue-600 via-purple-600 to-blue-800 bg-clip-text text-transparent">
                   Shubham Pawar
                 </span>
               </h1>
-              <p className="text-lg sm:text-xl md:text-2xl text-muted-foreground leading-relaxed">
+              <p className="text-lg sm:text-xl md:text-2xl text-muted-foreground ">
                 Former{" "}
                 <span className="text-green-600 dark:text-green-400 font-semibold">
                   MERN Stack Developer
@@ -136,7 +136,7 @@ export function HeroSection() {
                 </span>
               </p>
             </div>
-            <p className="text-base sm:text-lg md:text-xl text-muted-foreground leading-relaxed max-w-xl">
+            <p className="text-base sm:text-lg md:text-xl text-muted-foreground  max-w-xl">
               Transitioning from web development to data analytics, I combine my
               technical background with analytical thinking to extract
               meaningful insights from data. Proficient in Python, Excel, MySQL,
@@ -149,7 +149,7 @@ export function HeroSection() {
                 className="w-40 sm:w-auto px-3 py-2 text-sm sm:text-lg  bg-blue-600 hover:bg-blue-700 text-white"
               >
                 View My Work
-                <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-2 transition-transform duration-300" />
+                <ArrowRight className="ml-2 h-4 w-4 " />
               </Button>
               <DownloadResumeButton />
             </div>
@@ -157,9 +157,9 @@ export function HeroSection() {
 
           <motion.div
             className="relative"
-            initial={{ opacity: 0, x: 50 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
+            // initial={{ opacity: 0, x: 50 }}
+            // animate={{ opacity: 1, x: 0 }}
+            // transition={{ duration: 0.3, ease: "easeOut", delay: 0.2 }}
           >
             <div className="relative w-full h-52 sm:h-72 md:h-80 lg:h-96 flex flex-col items-center justify-center">
               <div className="absolute inset-0 bg-gradient-to-r from-blue-500/20 via-purple-500/20 to-cyan-500/20 rounded-full blur-3xl"></div>
