@@ -92,7 +92,7 @@ export function SkillsSection() {
                   </div>
                 }
                 
-                className={`group hover:shadow-xl hover:border-primary/50 transition-all duration-300 ${isDoubleWidth ? "md:col-span-2" : ""}`}
+                className={`group hover:shadow-xl hover:border-primary/50 transition-all duration-200 ${isDoubleWidth ? "md:col-span-2" : ""}`}
               />
             );
           })}

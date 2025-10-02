@@ -1,6 +1,7 @@
 {
-  "name": "my-v0-project",
+  "name": "mjshubham-da-portfolio",
   "version": "0.1.0",
+  "author": "Shubham R Pawar",
   "private": true,
   "scripts": {
     "build": "next build",

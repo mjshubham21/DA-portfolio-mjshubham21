@@ -129,7 +129,7 @@ export function Navigation() {
                 <Button
                   variant="ghost"
                   size="icon"
-                  className="hover:bg-primary/20 hover:text-primary transition-all duration-300"
+                  className="hover:bg-primary/20 hover:text-primary transition-all duration-200"
                 >
                   <Menu className="h-6 w-6" />
                 </Button>
@@ -162,7 +162,7 @@ export function Navigation() {
                             setIsOpen(false)
                           }
                         }}
-                        className={`flex items-center space-x-3 text-lg font-medium py-3 px-4 rounded-lg transition-all duration-300 group ${
+                        className={`flex items-center space-x-3 text-lg font-medium py-3 px-4 rounded-lg transition-all duration-200 group ${
                           isActive
                             ? "bg-primary/20 text-primary shadow-lg shadow-primary/20"
                             : "text-foreground hover:text-primary hover:bg-primary/10"

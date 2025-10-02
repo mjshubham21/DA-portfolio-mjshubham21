@@ -77,7 +77,7 @@ function renderTimelineItem(item: any, index: number) {
         )}
       </div>
 
-      <Card className="flex-1 hover:shadow-lg transition-all duration-300">
+      <Card className="flex-1 hover:shadow-lg transition-all duration-200">
         <CardContent className="p-6">
           {item.type === "experience" ? (
             <div>

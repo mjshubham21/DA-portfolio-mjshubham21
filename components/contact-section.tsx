@@ -13,7 +13,7 @@ export function ContactSection() {
   const [isSubmitting, setIsSubmitting] = useState(false)
   const { toast } = useToast()
 
-  const handleSubmit = async (e) => {
+  const handleSubmit = async (e : any) => {
     e.preventDefault()
     setIsSubmitting(true)
     const form = e.target

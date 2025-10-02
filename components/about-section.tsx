@@ -38,7 +38,7 @@ export function AboutSection() {
 
           <Card className="mb-8 backdrop-blur-xl bg-white/60 dark:bg-black/10 border-white/10">
             <CardContent className="p-8">
-              <div className="space-y-6 text-lg leading-relaxed">
+              <div className="space-y-6 text-lg ">
                 <p>👋 Hi, I'm Shubham Pawar — a former MERN stack developer now building a career in Data Analytics.</p>
                 <p>
                   🔄 In late 2024, I transitioned to analytics to unite my love for tech with numbers, logic, and decision-making.

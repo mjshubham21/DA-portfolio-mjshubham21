@@ -11,7 +11,7 @@ export function DownloadResumeButton() {
       asChild
     >
       <a href="/Shubham-Pawar-DA-Resume.pdf" target="_blank" rel="noopener noreferrer" download>
-        <Download className="mr-2 h-4 w-4 group-hover:scale-110 transition-transform duration-300" />
+        <Download className="mr-2 h-4 w-4 group-hover:scale-110 transition-transform duration-200" />
         My Resume
       </a>
     </Button>
