@@ -34,7 +34,7 @@ export function EnhancedHero() {
               Available for Opportunities
             </Badge>
 
-            <TypographyH1 className="text-4xl sm:text-6xl lg:text-8xl font-bold text-balance leading-tight">
+            <TypographyH1 className="text-4xl sm:text-6xl lg:text-8xl font-bold text-balance">
               Hi, I'm <span className="gradient-text">mjshubham21</span>
             </TypographyH1>
 
