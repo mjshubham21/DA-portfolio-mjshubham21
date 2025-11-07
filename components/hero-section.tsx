@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react"
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
-import { ArrowRight, Sparkles} from "lucide-react"
+import { ArrowRight, Sparkles } from "lucide-react"
 import { motion } from "framer-motion"
 // Import logos from src/assets
 import pythonLogo from "../src/assets/python-logo.png"
@@ -103,7 +103,7 @@ export function HeroSection() {
       <div className="w-full flex flex-col items-start px-4 z-20 sm:flex-row sm:items-center">
         <Badge
           variant="secondary"
-          className="bg-blue-100 text-blue-800 dark:bg-blue-900 dark:text-blue-200 border-blue-200 dark:border-blue-800 mt-4 sm:mt-0 sm:ml-2"
+          className="bg-blue-100 text-blue-800 dark:bg-blue-900 dark:text-blue-200 border-blue-200 dark:border-blue-800 mt-4 mb-2 sm:mt-0 sm:ml-2"
         >
           <Sparkles className="h-3 w-3 mr-1" />
           Available for Opportunities
@@ -114,26 +114,41 @@ export function HeroSection() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 lg:gap-16 items-center">
           <motion.div
             className="space-y-8"
-            // initial={{ opacity: 0, x: -50 }}
-            // animate={{ opacity: 1, x: 0 }}
-            // transition={{ duration: 0.3, ease: "easeOut" }}
+          // initial={{ opacity: 0, x: -50 }}
+          // animate={{ opacity: 1, x: 0 }}
+          // transition={{ duration: 0.3, ease: "easeOut" }}
           >
             <div className="space-y-6">
-              <h1 className="text-3xl sm:text-5xl lg:text-7xl font-bold text-balance ">
-                Hi, I'm{" "}
+              <h1 className="text-3xl sm:text-5xl lg:text-7xl font-bold text-balance leading-tight">
+                Hey, I'm{" "}
                 <span className="bg-gradient-to-r from-blue-600 via-purple-600 to-blue-800 bg-clip-text text-transparent">
                   Shubham Pawar
                 </span>
               </h1>
-              <p className="text-lg sm:text-xl md:text-2xl text-muted-foreground ">
-                Former{" "}
-                <span className="text-green-600 dark:text-green-400 font-semibold">
-                  MERN Stack Developer
-                </span>{" "}
-                now building a career in{" "}
-                <span className="text-blue-600 dark:text-blue-400 font-semibold">
-                  Data Analytics
+              <p className="text-lg sm:text-xl md:text-2xl text-muted-foreground">
+                <span className="text-blue-600 dark:text-blue-400 font-bold">
+                  Data Analyst Proficient in {" "}
                 </span>
+                <span className="text-green-600 dark:text-green-400 font-semibold">
+                  Excel
+                </span>
+                <span className="mx-1 text-gray-700 dark:text-gray-300 font-medium">, {" "}</span>
+                <span className="text-yellow-600 dark:text-yellow-400 font-semibold">
+                  SQL
+                </span>
+                <span className="mx-1 text-gray-700 dark:text-gray-300 font-medium">, {" "}</span>
+                <span className="text-pink-600 dark:text-pink-400 font-semibold">
+                  Python
+                </span>
+                <span className="mx-1 text-gray-700 dark:text-gray-300 font-medium">, {" "}</span>
+                <span className="text-indigo-600 dark:text-indigo-400 font-semibold">
+                  Power BI
+                </span>
+                <span className="mx-1 text-gray-700 dark:text-gray-300 font-medium">, {" "}</span>
+                <span className="text-purple-600 dark:text-purple-400 font-semibold">
+                  Tableau
+                </span>
+                <span className="mx-1 text-gray-700 dark:text-gray-300 font-medium">and more...</span>
               </p>
             </div>
             <p className="text-base sm:text-lg md:text-xl text-muted-foreground  max-w-xl">
@@ -157,9 +172,9 @@ export function HeroSection() {
 
           <motion.div
             className="relative"
-            // initial={{ opacity: 0, x: 50 }}
-            // animate={{ opacity: 1, x: 0 }}
-            // transition={{ duration: 0.3, ease: "easeOut", delay: 0.2 }}
+          // initial={{ opacity: 0, x: 50 }}
+          // animate={{ opacity: 1, x: 0 }}
+          // transition={{ duration: 0.3, ease: "easeOut", delay: 0.2 }}
           >
             <div className="relative w-full h-52 sm:h-72 md:h-80 lg:h-96 flex flex-col items-center justify-center">
               <div className="absolute inset-0 bg-gradient-to-r from-blue-500/20 via-purple-500/20 to-cyan-500/20 rounded-full blur-3xl"></div>

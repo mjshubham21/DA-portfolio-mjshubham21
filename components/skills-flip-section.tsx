@@ -17,7 +17,7 @@ export function SkillsFlipSection() {
   ]
 
   return (
-    <section className="py-20 bg-gradient-to-b from-background to-blue-50/30 dark:to-blue-950/20">
+    <section className="py-20 bg-gradient-to-b from-background to-blue-50/30 dark:to-blue-950/20 border-t border-b border-gray-300 dark:border-blue-400">
       <div className="container mx-auto px-4 text-center">
         <div className="flex flex-col items-center justify-center text-3xl sm:text-4xl font-normal text-neutral-600 dark:text-neutral-400 gap-2 sm:gap-0">
           <span>I specialize in</span>

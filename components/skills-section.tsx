@@ -55,7 +55,7 @@ export function SkillsSection() {
           </p>
         </div>
 
-        <BentoGrid className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+        <BentoGrid className="max-w-6xl mx-auto grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
           {skills.map((skill, index) => {
             // Determine if current grid item is double width
             const isDoubleWidth = index === 0 || index === 3;
@@ -76,7 +76,7 @@ export function SkillsSection() {
                   <div
                     className={`flex flex-1 w-full h-full min-h-[8rem] rounded-xl bg-gradient-to-br from-primary/10 to-accent/10 items-center justify-center overflow-hidden`}
                   >
-                    <motion.div
+                    {/* <motion.div
                       className="w-full h-full"
                       whileHover={{ scale: 1.2, rotate: 5 }}
                       transition={{ type: "spring", stiffness: 300 }}
@@ -88,10 +88,44 @@ export function SkillsSection() {
                         draggable={false}
                         loading="lazy"
                       />
+                    </motion.div> */}
+                    <motion.div
+                      className="w-full h-full"
+                      whileHover={{ scale: 1.2, rotate: 5 }}
+                      transition={{ type: "spring", stiffness: 300 }}
+                    >
+                      {skill.name === "Power BI" ? (
+                        <>
+                          {/* Mobile image */}
+                          <img
+                            src="/power-bi-mobile.jpg"
+                            alt={`${skill.name} logo`}
+                            className="object-cover w-full h-full block md:hidden"
+                            draggable={false}
+                            loading="lazy"
+                          />
+                          {/* Desktop and tablet image */}
+                          <img
+                            src={skill.icon}
+                            alt={`${skill.name} logo`}
+                            className="object-cover w-full h-full hidden md:block"
+                            draggable={false}
+                            loading="lazy"
+                          />
+                        </>
+                      ) : (
+                        <img
+                          src={skill.icon}
+                          alt={`${skill.name} logo`}
+                          className="object-cover w-full h-full"
+                          draggable={false}
+                          loading="lazy"
+                        />
+                      )}
                     </motion.div>
                   </div>
                 }
-                
+
                 className={`group hover:shadow-xl hover:border-primary/50 transition-all duration-200 ${isDoubleWidth ? "md:col-span-2" : ""}`}
               />
             );

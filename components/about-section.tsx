@@ -45,7 +45,7 @@ export function AboutSection() {
                 </p>
                 <p>
                   ✅ <strong>Proficient in:</strong> Microsoft Excel (dashboards, pivots, advanced functions, power query), MySQL (Joins, Aggregates, window funtions),
-                  GCP BigQuery, Python (NumPy, Pandas, Matplotlib, Seaborn etc), Power BI (DAX, KPIs), Tableau (Dashboards, Storyboards), Data Cleaning, Data Visualisation, Data Modelling and more.
+                  GCP BigQuery, Python (NumPy, Pandas, Matplotlib, Seaborn etc), Power BI (DAX, KPIs), Tableau (Dashboards, Storyboards), Data Cleaning, Data Visualisation, Data Modelling, ETL (Extract, Transform, Load), Gen AI and more.
                 </p>
                 <p>
                   📌 <strong>Currently learning:</strong> Statistics and Probability (theory, basics), sharpening analytical thinking.
